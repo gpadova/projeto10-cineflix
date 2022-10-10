@@ -21,4 +21,7 @@ const CabecalhoPag = styled.div`
     justify-content: center;
     font-family: ;
     font-size: 34px;
+    h1{
+        font-family: "Roboto";
+    }
 `

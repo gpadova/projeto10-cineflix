@@ -7,7 +7,7 @@ export default function HorarioFilmes({weekday, date, showtimes}){
         <Dia>
         <p>{weekday} - {date}</p>
         <Horarios>
-          {showtimes.map(i => <Link to={`/sessao/${i.id}`}><Horario>{i.name}</Horario></Link>)}
+          {showtimes.map(i => <Link to={`/sessao/${i.id}`} style={{ textDecoration: 'none' }}><Horario>{i.name}</Horario></Link>)}
         </Horarios>
       </Dia>
     )
@@ -43,6 +43,7 @@ const Horario = styled.div`
   align-items: center;
   margin-right: 10px;
   margin-top: 22px;
+  text-decoration: none;
   &:hover{
     border: 2px solid yellow;
   }
@@ -51,4 +52,5 @@ const Horarios = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 `;

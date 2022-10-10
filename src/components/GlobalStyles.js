@@ -43,6 +43,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+*{
+	font-family: "Roboto";
+}
 `
  
 export default GlobalStyle
